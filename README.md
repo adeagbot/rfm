@@ -9,8 +9,6 @@ spark-submit --class main.Runner --master local[4] rfm.jar file:/home/myfolder/r
 
 Example of result
 
-|userId| recency| frequency| duration 
-
 657,2014-07-20T18:20:56.000Z,1570,11914000
 270,2014-07-20T18:20:56.000Z,1557,12357000
 671,2014-07-20T18:20:56.000Z,1554,11743000
