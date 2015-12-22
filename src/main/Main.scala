@@ -64,7 +64,7 @@ object Main extends App with Logging{
     override def toString=userId+","+recency+","+frequency+","+duration
   }  
   
-  // Join the data by userId and sort accordingly to create the RFM metric
+  // Join the data by userId and sort accordingly to create the RFM results
  val rfm=recent.join(frequent).join(duration).map(i=>
    RFM(i._1,i._2._1._1,i._2._1._2,i._2._2)
  ).sortBy(x=>(x.recency,x.frequency,x.duration),false)
