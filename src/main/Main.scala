@@ -18,7 +18,6 @@ object Main extends App with Logging{
                  loadTimestamp:String="",
                  userId:String="",
                  url:String=""){
-    override def toString=rowKey+","+sessionId+","+ipAddress
   }
  
   val file=this.args(0);
